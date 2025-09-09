@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  .move {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2 / 2;
+    color: green;
+  }
+
+  @media (min-width: 768px) {
+    .move {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+      color: green;
+    }
+  }
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
